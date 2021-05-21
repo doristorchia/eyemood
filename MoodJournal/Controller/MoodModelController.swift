@@ -94,7 +94,7 @@ class MoodModelController: ObservableObject {
 
         let newMood = Mood(emotion: emotion, comment: comment, date: date)
         
-        moods.append(newMood)
+        moods.insert(newMood, at: 0) // (newMood)
         saveToPersistentStore()
     
     }
