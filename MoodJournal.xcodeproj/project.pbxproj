@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C02B0112656E44800374B2A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C02B00E2656E44800374B2A /* SecondView.swift */; };
-		4C02B0122656E44800374B2A /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C02B00F2656E44800374B2A /* FirstView.swift */; };
-		4C02B0132656E44800374B2A /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C02B0102656E44800374B2A /* MotherView.swift */; };
-		4C02B0152656E45500374B2A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C02B0142656E45500374B2A /* SplashView.swift */; };
-		4C02B0172656E45B00374B2A /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C02B0162656E45B00374B2A /* ViewRouter.swift */; };
 		79FDC84226558616000DD505 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FDC84126558616000DD505 /* AlertView.swift */; };
 		DA19C75826447277006067C0 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C75726447277006067C0 /* WeekView.swift */; };
 		DA19C75A264472B2006067C0 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C759264472B2006067C0 /* GridStack.swift */; };
@@ -29,6 +24,11 @@
 		DA292CDB26408A9D0021ACB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA292CDA26408A9D0021ACB8 /* ContentView.swift */; };
 		DA292CDD26408A9F0021ACB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA292CDC26408A9F0021ACB8 /* Assets.xcassets */; };
 		DA292CE026408A9F0021ACB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA292CDF26408A9F0021ACB8 /* Preview Assets.xcassets */; };
+		DA39AC542657374B00CA471A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39AC522657374B00CA471A /* SplashView.swift */; };
+		DA39AC552657374B00CA471A /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39AC532657374B00CA471A /* ViewRouter.swift */; };
+		DA39AC592657375500CA471A /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39AC562657375500CA471A /* FirstView.swift */; };
+		DA39AC5A2657375600CA471A /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39AC572657375500CA471A /* MotherView.swift */; };
+		DA39AC5B2657375600CA471A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39AC582657375500CA471A /* SecondView.swift */; };
 		DACCE6452652FB2B00E6BD9F /* MonthlyGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE6442652FB2B00E6BD9F /* MonthlyGraphView.swift */; };
 		DACCE6472652FCD100E6BD9F /* MonthlyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE6462652FCD100E6BD9F /* MonthlyRowView.swift */; };
 		DACCE6492652FDF500E6BD9F /* MonthlyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE6482652FDF500E6BD9F /* MonthlyReport.swift */; };
@@ -44,11 +44,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C02B00E2656E44800374B2A /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
-		4C02B00F2656E44800374B2A /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
-		4C02B0102656E44800374B2A /* MotherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
-		4C02B0142656E45500374B2A /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = "../../../../../Downloads/MoodJournal-main/MoodJournal/SplashView.swift"; sourceTree = "<group>"; };
-		4C02B0162656E45B00374B2A /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewRouter.swift; path = "../../../../../Downloads/MoodJournal-main/MoodJournal/ViewRouter.swift"; sourceTree = "<group>"; };
 		79FDC84126558616000DD505 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = MoodJournal/Views/Common/AlertView.swift; sourceTree = SOURCE_ROOT; };
 		DA19C75726447277006067C0 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		DA19C759264472B2006067C0 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
@@ -68,6 +63,11 @@
 		DA292CDC26408A9F0021ACB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA292CDF26408A9F0021ACB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA292CE126408A9F0021ACB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA39AC522657374B00CA471A /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = "../../EyeMood 2/EyeMood/EyeMood/SplashView.swift"; sourceTree = "<group>"; };
+		DA39AC532657374B00CA471A /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewRouter.swift; path = "../../EyeMood 2/EyeMood/EyeMood/ViewRouter.swift"; sourceTree = "<group>"; };
+		DA39AC562657375500CA471A /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstView.swift; path = "../../../../Users/jdallagnol/Desktop/EyeMood 2/EyeMood/EyeMood/Onboarding/FirstView.swift"; sourceTree = "<group>"; };
+		DA39AC572657375500CA471A /* MotherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotherView.swift; path = "../../../../Users/jdallagnol/Desktop/EyeMood 2/EyeMood/EyeMood/Onboarding/MotherView.swift"; sourceTree = "<group>"; };
+		DA39AC582657375500CA471A /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondView.swift; path = "../../../../Users/jdallagnol/Desktop/EyeMood 2/EyeMood/EyeMood/Onboarding/SecondView.swift"; sourceTree = "<group>"; };
 		DACCE6442652FB2B00E6BD9F /* MonthlyGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyGraphView.swift; sourceTree = "<group>"; };
 		DACCE6462652FCD100E6BD9F /* MonthlyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyRowView.swift; sourceTree = "<group>"; };
 		DACCE6482652FDF500E6BD9F /* MonthlyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyReport.swift; sourceTree = "<group>"; };
@@ -96,9 +96,9 @@
 		4C02B00D2656E44800374B2A /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				4C02B00E2656E44800374B2A /* SecondView.swift */,
-				4C02B00F2656E44800374B2A /* FirstView.swift */,
-				4C02B0102656E44800374B2A /* MotherView.swift */,
+				DA39AC562657375500CA471A /* FirstView.swift */,
+				DA39AC572657375500CA471A /* MotherView.swift */,
+				DA39AC582657375500CA471A /* SecondView.swift */,
 			);
 			name = Onboarding;
 			path = "../../../../../Downloads/MoodJournal-main/MoodJournal/Onboarding";
@@ -164,8 +164,8 @@
 		DA292CD726408A9D0021ACB8 /* MoodJournal */ = {
 			isa = PBXGroup;
 			children = (
-				4C02B0142656E45500374B2A /* SplashView.swift */,
-				4C02B0162656E45B00374B2A /* ViewRouter.swift */,
+				DA39AC522657374B00CA471A /* SplashView.swift */,
+				DA39AC532657374B00CA471A /* ViewRouter.swift */,
 				4C02B00D2656E44800374B2A /* Onboarding */,
 				E090E8A62644859F001C91FB /* Controller */,
 				DA292CDA26408A9D0021ACB8 /* ContentView.swift */,
@@ -294,6 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA19C75826447277006067C0 /* WeekView.swift in Sources */,
+				DA39AC592657375500CA471A /* FirstView.swift in Sources */,
+				DA39AC5B2657375600CA471A /* SecondView.swift in Sources */,
 				DA19C764264473FC006067C0 /* DayCellView.swift in Sources */,
 				79FDC84226558616000DD505 /* AlertView.swift in Sources */,
 				DACCE64D26546AFC00E6BD9F /* DailyGraphView.swift in Sources */,
@@ -305,8 +307,8 @@
 				DACCE6452652FB2B00E6BD9F /* MonthlyGraphView.swift in Sources */,
 				E097F755265443BE00F6E54D /* FeedView.swift in Sources */,
 				DA19C75C26447337006067C0 /* MonthView.swift in Sources */,
-				4C02B0172656E45B00374B2A /* ViewRouter.swift in Sources */,
 				DA22AB9A2641C39E0083C679 /* OverviewView.swift in Sources */,
+				DA39AC542657374B00CA471A /* SplashView.swift in Sources */,
 				DA19C75A264472B2006067C0 /* GridStack.swift in Sources */,
 				DA19C762264473D8006067C0 /* Day.swift in Sources */,
 				DA22AB8E2641C2710083C679 /* TabBar.swift in Sources */,
@@ -315,16 +317,14 @@
 				DA19C760264473C0006067C0 /* Month.swift in Sources */,
 				DA292CDB26408A9D0021ACB8 /* ContentView.swift in Sources */,
 				DACCE6472652FCD100E6BD9F /* MonthlyRowView.swift in Sources */,
-				4C02B0152656E45500374B2A /* SplashView.swift in Sources */,
 				DACCE6492652FDF500E6BD9F /* MonthlyReport.swift in Sources */,
-				4C02B0112656E44800374B2A /* SecondView.swift in Sources */,
 				DA22AB972641C38C0083C679 /* NewMoodView.swift in Sources */,
-				4C02B0132656E44800374B2A /* MotherView.swift in Sources */,
-				4C02B0122656E44800374B2A /* FirstView.swift in Sources */,
 				E090E8A826448613001C91FB /* MultiLineText.swift in Sources */,
 				E07228262654238F0050C527 /* AddMoodView.swift in Sources */,
+				DA39AC5A2657375600CA471A /* MotherView.swift in Sources */,
 				DA292CD926408A9D0021ACB8 /* MoodJournalApp.swift in Sources */,
 				DACCE64B2654688200E6BD9F /* DailyColumnView.swift in Sources */,
+				DA39AC552657374B00CA471A /* ViewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
