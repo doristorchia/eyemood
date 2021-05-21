@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C02B0112656E44800374B2A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C02B00E2656E44800374B2A /* SecondView.swift */; };
+		4C02B0122656E44800374B2A /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C02B00F2656E44800374B2A /* FirstView.swift */; };
+		4C02B0132656E44800374B2A /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C02B0102656E44800374B2A /* MotherView.swift */; };
+		4C02B0152656E45500374B2A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C02B0142656E45500374B2A /* SplashView.swift */; };
+		4C02B0172656E45B00374B2A /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C02B0162656E45B00374B2A /* ViewRouter.swift */; };
+		79FDC84226558616000DD505 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FDC84126558616000DD505 /* AlertView.swift */; };
+		DA19C75826447277006067C0 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C75726447277006067C0 /* WeekView.swift */; };
+		DA19C75A264472B2006067C0 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C759264472B2006067C0 /* GridStack.swift */; };
+		DA19C75C26447337006067C0 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C75B26447337006067C0 /* MonthView.swift */; };
+		DA19C75E2644735F006067C0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C75D2644735F006067C0 /* Colors.swift */; };
+		DA19C760264473C0006067C0 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C75F264473C0006067C0 /* Month.swift */; };
+		DA19C762264473D8006067C0 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C761264473D8006067C0 /* Day.swift */; };
+		DA19C764264473FC006067C0 /* DayCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C763264473FC006067C0 /* DayCellView.swift */; };
+		DA19C766264474E5006067C0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C765264474E5006067C0 /* Helper.swift */; };
+		DA22AB8E2641C2710083C679 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22AB8D2641C2710083C679 /* TabBar.swift */; };
+		DA22AB932641C37F0083C679 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22AB922641C37F0083C679 /* HomeView.swift */; };
+		DA22AB972641C38C0083C679 /* NewMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22AB962641C38C0083C679 /* NewMoodView.swift */; };
+		DA22AB9A2641C39E0083C679 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22AB992641C39E0083C679 /* OverviewView.swift */; };
+		DA292CD926408A9D0021ACB8 /* MoodJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA292CD826408A9D0021ACB8 /* MoodJournalApp.swift */; };
+		DA292CDB26408A9D0021ACB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA292CDA26408A9D0021ACB8 /* ContentView.swift */; };
+		DA292CDD26408A9F0021ACB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA292CDC26408A9F0021ACB8 /* Assets.xcassets */; };
+		DA292CE026408A9F0021ACB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA292CDF26408A9F0021ACB8 /* Preview Assets.xcassets */; };
+		DACCE6452652FB2B00E6BD9F /* MonthlyGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE6442652FB2B00E6BD9F /* MonthlyGraphView.swift */; };
+		DACCE6472652FCD100E6BD9F /* MonthlyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE6462652FCD100E6BD9F /* MonthlyRowView.swift */; };
+		DACCE6492652FDF500E6BD9F /* MonthlyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE6482652FDF500E6BD9F /* MonthlyReport.swift */; };
+		DACCE64B2654688200E6BD9F /* DailyColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE64A2654688200E6BD9F /* DailyColumnView.swift */; };
+		DACCE64D26546AFC00E6BD9F /* DailyGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE64C26546AFC00E6BD9F /* DailyGraphView.swift */; };
+		DACCE64F26547BE700E6BD9F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE64E26547BE700E6BD9F /* CalendarView.swift */; };
+		E07228262654238F0050C527 /* AddMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07228252654238F0050C527 /* AddMoodView.swift */; };
+		E090E8A12644842D001C91FB /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = E090E8A02644842D001C91FB /* Mood.swift */; };
+		E090E8A326448481001C91FB /* MoodModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E090E8A226448481001C91FB /* MoodModelController.swift */; };
+		E090E8A5264484BB001C91FB /* MoodsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E090E8A4264484BB001C91FB /* MoodsRowView.swift */; };
+		E090E8A826448613001C91FB /* MultiLineText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E090E8A726448613001C91FB /* MultiLineText.swift */; };
+		E097F755265443BE00F6E54D /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E097F754265443BE00F6E54D /* FeedView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C02B00E2656E44800374B2A /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		4C02B00F2656E44800374B2A /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		4C02B0102656E44800374B2A /* MotherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		4C02B0142656E45500374B2A /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = "../../../../../Downloads/MoodJournal-main/MoodJournal/SplashView.swift"; sourceTree = "<group>"; };
+		4C02B0162656E45B00374B2A /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewRouter.swift; path = "../../../../../Downloads/MoodJournal-main/MoodJournal/ViewRouter.swift"; sourceTree = "<group>"; };
+		79FDC84126558616000DD505 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = MoodJournal/Views/Common/AlertView.swift; sourceTree = SOURCE_ROOT; };
+		DA19C75726447277006067C0 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		DA19C759264472B2006067C0 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
+		DA19C75B26447337006067C0 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		DA19C75D2644735F006067C0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = MoodJournal/Views/Common/Colors.swift; sourceTree = SOURCE_ROOT; };
+		DA19C75F264473C0006067C0 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Month.swift; path = MoodJournal/Views/Common/Month.swift; sourceTree = SOURCE_ROOT; };
+		DA19C761264473D8006067C0 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Day.swift; path = MoodJournal/Views/Common/Day.swift; sourceTree = SOURCE_ROOT; };
+		DA19C763264473FC006067C0 /* DayCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DayCellView.swift; path = MoodJournal/Views/Common/Overview/DayCellView.swift; sourceTree = SOURCE_ROOT; };
+		DA19C765264474E5006067C0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		DA22AB8D2641C2710083C679 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		DA22AB922641C37F0083C679 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DA22AB962641C38C0083C679 /* NewMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMoodView.swift; sourceTree = "<group>"; };
+		DA22AB992641C39E0083C679 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
+		DA292CD526408A9D0021ACB8 /* MoodJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA292CD826408A9D0021ACB8 /* MoodJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodJournalApp.swift; sourceTree = "<group>"; };
+		DA292CDA26408A9D0021ACB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA292CDC26408A9F0021ACB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA292CDF26408A9F0021ACB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA292CE126408A9F0021ACB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACCE6442652FB2B00E6BD9F /* MonthlyGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyGraphView.swift; sourceTree = "<group>"; };
+		DACCE6462652FCD100E6BD9F /* MonthlyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyRowView.swift; sourceTree = "<group>"; };
+		DACCE6482652FDF500E6BD9F /* MonthlyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyReport.swift; sourceTree = "<group>"; };
+		DACCE64A2654688200E6BD9F /* DailyColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyColumnView.swift; sourceTree = "<group>"; };
+		DACCE64C26546AFC00E6BD9F /* DailyGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGraphView.swift; sourceTree = "<group>"; };
+		DACCE64E26547BE700E6BD9F /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		E07228252654238F0050C527 /* AddMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoodView.swift; sourceTree = "<group>"; };
+		E090E8A02644842D001C91FB /* Mood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		E090E8A226448481001C91FB /* MoodModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodModelController.swift; sourceTree = "<group>"; };
+		E090E8A4264484BB001C91FB /* MoodsRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsRowView.swift; sourceTree = "<group>"; };
+		E090E8A726448613001C91FB /* MultiLineText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLineText.swift; sourceTree = "<group>"; };
+		E097F754265443BE00F6E54D /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA292CD226408A9D0021ACB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C02B00D2656E44800374B2A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4C02B00E2656E44800374B2A /* SecondView.swift */,
+				4C02B00F2656E44800374B2A /* FirstView.swift */,
+				4C02B0102656E44800374B2A /* MotherView.swift */,
+			);
+			name = Onboarding;
+			path = "../../../../../Downloads/MoodJournal-main/MoodJournal/Onboarding";
+			sourceTree = "<group>";
+		};
+		DA22AB8A2641BB580083C679 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA22AB912641C3530083C679 /* Tabs */,
+				DA22AB8C2641C2580083C679 /* Common */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA22AB8B2641BB620083C679 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E090E8A02644842D001C91FB /* Mood.swift */,
+				DA19C75D2644735F006067C0 /* Colors.swift */,
+				DA19C75F264473C0006067C0 /* Month.swift */,
+				DA19C761264473D8006067C0 /* Day.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA22AB8C2641C2580083C679 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DACCE640264F006000E6BD9F /* Overview */,
+				E07228252654238F0050C527 /* AddMoodView.swift */,
+				E097F754265443BE00F6E54D /* FeedView.swift */,
+				DA22AB8D2641C2710083C679 /* TabBar.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DA22AB912641C3530083C679 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				DA22AB922641C37F0083C679 /* HomeView.swift */,
+				DA22AB962641C38C0083C679 /* NewMoodView.swift */,
+				DA22AB992641C39E0083C679 /* OverviewView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		DA292CCC26408A9C0021ACB8 = {
+			isa = PBXGroup;
+			children = (
+				DA292CD726408A9D0021ACB8 /* MoodJournal */,
+				DA292CD626408A9D0021ACB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA292CD626408A9D0021ACB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA292CD526408A9D0021ACB8 /* MoodJournal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA292CD726408A9D0021ACB8 /* MoodJournal */ = {
+			isa = PBXGroup;
+			children = (
+				4C02B0142656E45500374B2A /* SplashView.swift */,
+				4C02B0162656E45B00374B2A /* ViewRouter.swift */,
+				4C02B00D2656E44800374B2A /* Onboarding */,
+				E090E8A62644859F001C91FB /* Controller */,
+				DA292CDA26408A9D0021ACB8 /* ContentView.swift */,
+				DA292CD826408A9D0021ACB8 /* MoodJournalApp.swift */,
+				E090E8A726448613001C91FB /* MultiLineText.swift */,
+				DA19C765264474E5006067C0 /* Helper.swift */,
+				DA22AB8A2641BB580083C679 /* Views */,
+				DA292CDC26408A9F0021ACB8 /* Assets.xcassets */,
+				DA22AB8B2641BB620083C679 /* Model */,
+				DA292CE126408A9F0021ACB8 /* Info.plist */,
+				DA292CDE26408A9F0021ACB8 /* Preview Content */,
+			);
+			path = MoodJournal;
+			sourceTree = "<group>";
+		};
+		DA292CDE26408A9F0021ACB8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DA292CDF26408A9F0021ACB8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DACCE640264F006000E6BD9F /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				79FDC84126558616000DD505 /* AlertView.swift */,
+				DACCE641264F009100E6BD9F /* Graph */,
+				DA19C75726447277006067C0 /* WeekView.swift */,
+				DA19C75B26447337006067C0 /* MonthView.swift */,
+				DA19C763264473FC006067C0 /* DayCellView.swift */,
+				DA19C759264472B2006067C0 /* GridStack.swift */,
+				E090E8A4264484BB001C91FB /* MoodsRowView.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		DACCE641264F009100E6BD9F /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				DACCE6442652FB2B00E6BD9F /* MonthlyGraphView.swift */,
+				DACCE64C26546AFC00E6BD9F /* DailyGraphView.swift */,
+				DACCE6462652FCD100E6BD9F /* MonthlyRowView.swift */,
+				DACCE64A2654688200E6BD9F /* DailyColumnView.swift */,
+				DACCE6482652FDF500E6BD9F /* MonthlyReport.swift */,
+				DACCE64E26547BE700E6BD9F /* CalendarView.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		E090E8A62644859F001C91FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E090E8A226448481001C91FB /* MoodModelController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA292CD426408A9D0021ACB8 /* MoodJournal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA292CE426408A9F0021ACB8 /* Build configuration list for PBXNativeTarget "MoodJournal" */;
+			buildPhases = (
+				DA292CD126408A9D0021ACB8 /* Sources */,
+				DA292CD226408A9D0021ACB8 /* Frameworks */,
+				DA292CD326408A9D0021ACB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoodJournal;
+			productName = MoodJournal;
+			productReference = DA292CD526408A9D0021ACB8 /* MoodJournal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA292CCD26408A9C0021ACB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					DA292CD426408A9D0021ACB8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = DA292CD026408A9C0021ACB8 /* Build configuration list for PBXProject "MoodJournal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA292CCC26408A9C0021ACB8;
+			productRefGroup = DA292CD626408A9D0021ACB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA292CD426408A9D0021ACB8 /* MoodJournal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA292CD326408A9D0021ACB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA292CE026408A9F0021ACB8 /* Preview Assets.xcassets in Resources */,
+				DA292CDD26408A9F0021ACB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA292CD126408A9D0021ACB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA19C75826447277006067C0 /* WeekView.swift in Sources */,
+				DA19C764264473FC006067C0 /* DayCellView.swift in Sources */,
+				79FDC84226558616000DD505 /* AlertView.swift in Sources */,
+				DACCE64D26546AFC00E6BD9F /* DailyGraphView.swift in Sources */,
+				E090E8A326448481001C91FB /* MoodModelController.swift in Sources */,
+				DA19C766264474E5006067C0 /* Helper.swift in Sources */,
+				DA19C75E2644735F006067C0 /* Colors.swift in Sources */,
+				DACCE64F26547BE700E6BD9F /* CalendarView.swift in Sources */,
+				E090E8A12644842D001C91FB /* Mood.swift in Sources */,
+				DACCE6452652FB2B00E6BD9F /* MonthlyGraphView.swift in Sources */,
+				E097F755265443BE00F6E54D /* FeedView.swift in Sources */,
+				DA19C75C26447337006067C0 /* MonthView.swift in Sources */,
+				4C02B0172656E45B00374B2A /* ViewRouter.swift in Sources */,
+				DA22AB9A2641C39E0083C679 /* OverviewView.swift in Sources */,
+				DA19C75A264472B2006067C0 /* GridStack.swift in Sources */,
+				DA19C762264473D8006067C0 /* Day.swift in Sources */,
+				DA22AB8E2641C2710083C679 /* TabBar.swift in Sources */,
+				E090E8A5264484BB001C91FB /* MoodsRowView.swift in Sources */,
+				DA22AB932641C37F0083C679 /* HomeView.swift in Sources */,
+				DA19C760264473C0006067C0 /* Month.swift in Sources */,
+				DA292CDB26408A9D0021ACB8 /* ContentView.swift in Sources */,
+				DACCE6472652FCD100E6BD9F /* MonthlyRowView.swift in Sources */,
+				4C02B0152656E45500374B2A /* SplashView.swift in Sources */,
+				DACCE6492652FDF500E6BD9F /* MonthlyReport.swift in Sources */,
+				4C02B0112656E44800374B2A /* SecondView.swift in Sources */,
+				DA22AB972641C38C0083C679 /* NewMoodView.swift in Sources */,
+				4C02B0132656E44800374B2A /* MotherView.swift in Sources */,
+				4C02B0122656E44800374B2A /* FirstView.swift in Sources */,
+				E090E8A826448613001C91FB /* MultiLineText.swift in Sources */,
+				E07228262654238F0050C527 /* AddMoodView.swift in Sources */,
+				DA292CD926408A9D0021ACB8 /* MoodJournalApp.swift in Sources */,
+				DACCE64B2654688200E6BD9F /* DailyColumnView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DA292CE226408A9F0021ACB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA292CE326408A9F0021ACB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA292CE526408A9F0021ACB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MoodJournal/Preview Content\"";
+				DEVELOPMENT_TEAM = 27QRF6CU94;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MoodJournal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.eyemood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DA292CE626408A9F0021ACB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MoodJournal/Preview Content\"";
+				DEVELOPMENT_TEAM = 27QRF6CU94;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MoodJournal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.eyemood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA292CD026408A9C0021ACB8 /* Build configuration list for PBXProject "MoodJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA292CE226408A9F0021ACB8 /* Debug */,
+				DA292CE326408A9F0021ACB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA292CE426408A9F0021ACB8 /* Build configuration list for PBXNativeTarget "MoodJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA292CE526408A9F0021ACB8 /* Debug */,
+				DA292CE626408A9F0021ACB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA292CCD26408A9C0021ACB8 /* Project object */;
+}
