@@ -93,15 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C02B00D2656E44800374B2A /* Onboarding */ = {
+		4C02B00D2656E44800374B2A /* Onboardin */ = {
 			isa = PBXGroup;
 			children = (
+				DAE7503726574B9A00786858 /* New Group */,
 				DA39AC562657375500CA471A /* FirstView.swift */,
 				DA39AC572657375500CA471A /* MotherView.swift */,
 				DA39AC582657375500CA471A /* SecondView.swift */,
 			);
-			name = Onboarding;
-			path = "../../../../../Downloads/MoodJournal-main/MoodJournal/Onboarding";
+			name = Onboardin;
+			path = "../../../../../Downloads/MoodJournal-main/MoodJournal/Onboardin";
 			sourceTree = "<group>";
 		};
 		DA22AB8A2641BB580083C679 /* Views */ = {
@@ -166,7 +167,8 @@
 			children = (
 				DA39AC522657374B00CA471A /* SplashView.swift */,
 				DA39AC532657374B00CA471A /* ViewRouter.swift */,
-				4C02B00D2656E44800374B2A /* Onboarding */,
+				DAE7503826574BA400786858 /* New Group */,
+				4C02B00D2656E44800374B2A /* Onboardin */,
 				E090E8A62644859F001C91FB /* Controller */,
 				DA292CDA26408A9D0021ACB8 /* ContentView.swift */,
 				DA292CD826408A9D0021ACB8 /* MoodJournalApp.swift */,
@@ -214,6 +216,20 @@
 				DACCE64E26547BE700E6BD9F /* CalendarView.swift */,
 			);
 			path = Graph;
+			sourceTree = "<group>";
+		};
+		DAE7503726574B9A00786858 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		DAE7503826574BA400786858 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		E090E8A62644859F001C91FB /* Controller */ = {
@@ -462,7 +478,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eyemood;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eyemoodApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -484,7 +500,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eyemood;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eyemoodApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
