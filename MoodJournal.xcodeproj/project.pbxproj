@@ -32,6 +32,9 @@
 		DACCE64B2654688200E6BD9F /* DailyColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE64A2654688200E6BD9F /* DailyColumnView.swift */; };
 		DACCE64D26546AFC00E6BD9F /* DailyGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE64C26546AFC00E6BD9F /* DailyGraphView.swift */; };
 		DACCE64F26547BE700E6BD9F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE64E26547BE700E6BD9F /* CalendarView.swift */; };
+		DAE7504026574C8700786858 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7503D26574C8700786858 /* SecondView.swift */; };
+		DAE7504126574C8700786858 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7503E26574C8700786858 /* FirstView.swift */; };
+		DAE7504226574C8700786858 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7503F26574C8700786858 /* MotherView.swift */; };
 		E07228262654238F0050C527 /* AddMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07228252654238F0050C527 /* AddMoodView.swift */; };
 		E090E8A12644842D001C91FB /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = E090E8A02644842D001C91FB /* Mood.swift */; };
 		E090E8A326448481001C91FB /* MoodModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E090E8A226448481001C91FB /* MoodModelController.swift */; };
@@ -68,9 +71,9 @@
 		DACCE64A2654688200E6BD9F /* DailyColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyColumnView.swift; sourceTree = "<group>"; };
 		DACCE64C26546AFC00E6BD9F /* DailyGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGraphView.swift; sourceTree = "<group>"; };
 		DACCE64E26547BE700E6BD9F /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		DAE7503926574BDA00786858 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
-		DAE7503A26574BDA00786858 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
-		DAE7503B26574BDA00786858 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		DAE7503D26574C8700786858 /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		DAE7503E26574C8700786858 /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		DAE7503F26574C8700786858 /* MotherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		E07228252654238F0050C527 /* AddMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoodView.swift; sourceTree = "<group>"; };
 		E090E8A02644842D001C91FB /* Mood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		E090E8A226448481001C91FB /* MoodModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodModelController.swift; sourceTree = "<group>"; };
@@ -152,7 +155,7 @@
 			children = (
 				DA39AC522657374B00CA471A /* SplashView.swift */,
 				DA39AC532657374B00CA471A /* ViewRouter.swift */,
-				DAE7503826574BA400786858 /* Onboardin */,
+				DAE7503C26574C8700786858 /* Onboarding */,
 				E090E8A62644859F001C91FB /* Controller */,
 				DA292CDA26408A9D0021ACB8 /* ContentView.swift */,
 				DA292CD826408A9D0021ACB8 /* MoodJournalApp.swift */,
@@ -202,14 +205,14 @@
 			path = Graph;
 			sourceTree = "<group>";
 		};
-		DAE7503826574BA400786858 /* Onboardin */ = {
+		DAE7503C26574C8700786858 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				DAE7503926574BDA00786858 /* FirstView.swift */,
-				DAE7503B26574BDA00786858 /* MotherView.swift */,
-				DAE7503A26574BDA00786858 /* SecondView.swift */,
+				DAE7503D26574C8700786858 /* SecondView.swift */,
+				DAE7503E26574C8700786858 /* FirstView.swift */,
+				DAE7503F26574C8700786858 /* MotherView.swift */,
 			);
-			path = Onboardin;
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		E090E8A62644859F001C91FB /* Controller */ = {
@@ -295,6 +298,7 @@
 				DACCE64D26546AFC00E6BD9F /* DailyGraphView.swift in Sources */,
 				E090E8A326448481001C91FB /* MoodModelController.swift in Sources */,
 				DA19C766264474E5006067C0 /* Helper.swift in Sources */,
+				DAE7504026574C8700786858 /* SecondView.swift in Sources */,
 				DA19C75E2644735F006067C0 /* Colors.swift in Sources */,
 				DACCE64F26547BE700E6BD9F /* CalendarView.swift in Sources */,
 				E090E8A12644842D001C91FB /* Mood.swift in Sources */,
@@ -309,10 +313,12 @@
 				E090E8A5264484BB001C91FB /* MoodsRowView.swift in Sources */,
 				DA22AB932641C37F0083C679 /* HomeView.swift in Sources */,
 				DA19C760264473C0006067C0 /* Month.swift in Sources */,
+				DAE7504226574C8700786858 /* MotherView.swift in Sources */,
 				DA292CDB26408A9D0021ACB8 /* ContentView.swift in Sources */,
 				DACCE6472652FCD100E6BD9F /* MonthlyRowView.swift in Sources */,
 				DACCE6492652FDF500E6BD9F /* MonthlyReport.swift in Sources */,
 				DA22AB972641C38C0083C679 /* NewMoodView.swift in Sources */,
+				DAE7504126574C8700786858 /* FirstView.swift in Sources */,
 				E090E8A826448613001C91FB /* MultiLineText.swift in Sources */,
 				E07228262654238F0050C527 /* AddMoodView.swift in Sources */,
 				DA292CD926408A9D0021ACB8 /* MoodJournalApp.swift in Sources */,
