@@ -20,12 +20,13 @@ struct MonthlyGraphView: View {
             
             ForEach(monthlyReports, id: \.id) { report in
                 
-                HStack {
+                //HStack {
                     MonthlyRowView(report: report)
                     Spacer()
-                }
+               // }
             }
         }
+      //  .animation(.easeIn)
         .padding()
     }
 }

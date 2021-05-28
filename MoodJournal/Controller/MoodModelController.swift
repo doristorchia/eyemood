@@ -189,6 +189,8 @@ class MoodModelController: ObservableObject {
         return moodsByMonth
     }
     
+    
+    // Get reports by month
     func getReports(date: Date) -> [MonthlyReport] {
         let moodsOfMonth = self.getMoodsByMonth(date: date)
         var angry: Int = 0

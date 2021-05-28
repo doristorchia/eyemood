@@ -9,8 +9,12 @@ struct WeekView: View {
    
             GridStack(rows: 1, columns: 7) { row, col in
                 Text(self.weekdays[col])
+                    .padding(.trailing, 10)
             }
-        }.padding(.bottom, 5).background(colors.weekdayBackgroundColor).foregroundColor(Color(#colorLiteral(red: 0.6615652442, green: 0.6646293402, blue: 0.6721103191, alpha: 1)))
+        }
+        .padding(.bottom, 2)
+        .background(colors.weekdayBackgroundColor)
+        .foregroundColor(Color(#colorLiteral(red: 0.6615652442, green: 0.6646293402, blue: 0.6721103191, alpha: 1)))
     }
 }
 

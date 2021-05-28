@@ -1,6 +1,6 @@
 import Foundation
 import SwiftUI
-
+//deprecated?
 class Day: ObservableObject {
 
     @Published var isSelected = false

@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		79FDC84226558616000DD505 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FDC84126558616000DD505 /* AlertView.swift */; };
+		DA090680265EE9DF00BC013A /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA09067F265EE9DF00BC013A /* GridStack.swift */; };
 		DA19C75826447277006067C0 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C75726447277006067C0 /* WeekView.swift */; };
-		DA19C75A264472B2006067C0 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C759264472B2006067C0 /* GridStack.swift */; };
-		DA19C75C26447337006067C0 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C75B26447337006067C0 /* MonthView.swift */; };
 		DA19C75E2644735F006067C0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C75D2644735F006067C0 /* Colors.swift */; };
 		DA19C760264473C0006067C0 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C75F264473C0006067C0 /* Month.swift */; };
 		DA19C762264473D8006067C0 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C761264473D8006067C0 /* Day.swift */; };
-		DA19C764264473FC006067C0 /* DayCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C763264473FC006067C0 /* DayCellView.swift */; };
 		DA19C766264474E5006067C0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C765264474E5006067C0 /* Helper.swift */; };
 		DA22AB8E2641C2710083C679 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22AB8D2641C2710083C679 /* TabBar.swift */; };
 		DA22AB932641C37F0083C679 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22AB922641C37F0083C679 /* HomeView.swift */; };
@@ -24,14 +22,15 @@
 		DA292CDB26408A9D0021ACB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA292CDA26408A9D0021ACB8 /* ContentView.swift */; };
 		DA292CDD26408A9F0021ACB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA292CDC26408A9F0021ACB8 /* Assets.xcassets */; };
 		DA292CE026408A9F0021ACB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA292CDF26408A9F0021ACB8 /* Preview Assets.xcassets */; };
-		DA39AC542657374B00CA471A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39AC522657374B00CA471A /* SplashView.swift */; };
-		DA39AC552657374B00CA471A /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA39AC532657374B00CA471A /* ViewRouter.swift */; };
+		DA35E61E265D6BF500346CC3 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35E61C265D6BF500346CC3 /* SplashView.swift */; };
+		DA35E61F265D6BF500346CC3 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35E61D265D6BF500346CC3 /* ViewRouter.swift */; };
+		DA35E624265D6D7E00346CC3 /* ElegantCalendar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA35E623265D6D7E00346CC3 /* ElegantCalendar.xcassets */; };
+		DAB4E308265EC0DD0070F37D /* Calendar2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB4E307265EC0DD0070F37D /* Calendar2.swift */; };
 		DACCE6452652FB2B00E6BD9F /* MonthlyGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE6442652FB2B00E6BD9F /* MonthlyGraphView.swift */; };
 		DACCE6472652FCD100E6BD9F /* MonthlyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE6462652FCD100E6BD9F /* MonthlyRowView.swift */; };
 		DACCE6492652FDF500E6BD9F /* MonthlyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE6482652FDF500E6BD9F /* MonthlyReport.swift */; };
 		DACCE64B2654688200E6BD9F /* DailyColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE64A2654688200E6BD9F /* DailyColumnView.swift */; };
 		DACCE64D26546AFC00E6BD9F /* DailyGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE64C26546AFC00E6BD9F /* DailyGraphView.swift */; };
-		DACCE64F26547BE700E6BD9F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACCE64E26547BE700E6BD9F /* CalendarView.swift */; };
 		DAE7504026574C8700786858 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7503D26574C8700786858 /* SecondView.swift */; };
 		DAE7504126574C8700786858 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7503E26574C8700786858 /* FirstView.swift */; };
 		DAE7504226574C8700786858 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE7503F26574C8700786858 /* MotherView.swift */; };
@@ -45,13 +44,11 @@
 
 /* Begin PBXFileReference section */
 		79FDC84126558616000DD505 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = MoodJournal/Views/Common/AlertView.swift; sourceTree = SOURCE_ROOT; };
+		DA09067F265EE9DF00BC013A /* GridStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
 		DA19C75726447277006067C0 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
-		DA19C759264472B2006067C0 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
-		DA19C75B26447337006067C0 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		DA19C75D2644735F006067C0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = MoodJournal/Views/Common/Colors.swift; sourceTree = SOURCE_ROOT; };
 		DA19C75F264473C0006067C0 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Month.swift; path = MoodJournal/Views/Common/Month.swift; sourceTree = SOURCE_ROOT; };
 		DA19C761264473D8006067C0 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Day.swift; path = MoodJournal/Views/Common/Day.swift; sourceTree = SOURCE_ROOT; };
-		DA19C763264473FC006067C0 /* DayCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DayCellView.swift; path = MoodJournal/Views/Common/Overview/DayCellView.swift; sourceTree = SOURCE_ROOT; };
 		DA19C765264474E5006067C0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		DA22AB8D2641C2710083C679 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		DA22AB922641C37F0083C679 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -63,14 +60,15 @@
 		DA292CDC26408A9F0021ACB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA292CDF26408A9F0021ACB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA292CE126408A9F0021ACB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA39AC522657374B00CA471A /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = "../../EyeMood 2/EyeMood/EyeMood/SplashView.swift"; sourceTree = "<group>"; };
-		DA39AC532657374B00CA471A /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewRouter.swift; path = "../../EyeMood 2/EyeMood/EyeMood/ViewRouter.swift"; sourceTree = "<group>"; };
+		DA35E61C265D6BF500346CC3 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = ../../SplashView.swift; sourceTree = "<group>"; };
+		DA35E61D265D6BF500346CC3 /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewRouter.swift; path = ../../ViewRouter.swift; sourceTree = "<group>"; };
+		DA35E623265D6D7E00346CC3 /* ElegantCalendar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = ElegantCalendar.xcassets; path = ../../../SourcePackages/checkouts/ElegantCalendar/ElegantCalendar.xcassets; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB4E307265EC0DD0070F37D /* Calendar2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar2.swift; sourceTree = "<group>"; };
 		DACCE6442652FB2B00E6BD9F /* MonthlyGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyGraphView.swift; sourceTree = "<group>"; };
 		DACCE6462652FCD100E6BD9F /* MonthlyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyRowView.swift; sourceTree = "<group>"; };
 		DACCE6482652FDF500E6BD9F /* MonthlyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyReport.swift; sourceTree = "<group>"; };
 		DACCE64A2654688200E6BD9F /* DailyColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyColumnView.swift; sourceTree = "<group>"; };
 		DACCE64C26546AFC00E6BD9F /* DailyGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGraphView.swift; sourceTree = "<group>"; };
-		DACCE64E26547BE700E6BD9F /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		DAE7503D26574C8700786858 /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		DAE7503E26574C8700786858 /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		DAE7503F26574C8700786858 /* MotherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
@@ -105,6 +103,7 @@
 		DA22AB8B2641BB620083C679 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA09067F265EE9DF00BC013A /* GridStack.swift */,
 				E090E8A02644842D001C91FB /* Mood.swift */,
 				DA19C75D2644735F006067C0 /* Colors.swift */,
 				DA19C75F264473C0006067C0 /* Month.swift */,
@@ -137,6 +136,7 @@
 		DA292CCC26408A9C0021ACB8 = {
 			isa = PBXGroup;
 			children = (
+				DA35E623265D6D7E00346CC3 /* ElegantCalendar.xcassets */,
 				DA292CD726408A9D0021ACB8 /* MoodJournal */,
 				DA292CD626408A9D0021ACB8 /* Products */,
 			);
@@ -153,8 +153,8 @@
 		DA292CD726408A9D0021ACB8 /* MoodJournal */ = {
 			isa = PBXGroup;
 			children = (
-				DA39AC522657374B00CA471A /* SplashView.swift */,
-				DA39AC532657374B00CA471A /* ViewRouter.swift */,
+				DA35E61C265D6BF500346CC3 /* SplashView.swift */,
+				DA35E61D265D6BF500346CC3 /* ViewRouter.swift */,
 				DAE7503C26574C8700786858 /* Onboarding */,
 				E090E8A62644859F001C91FB /* Controller */,
 				DA292CDA26408A9D0021ACB8 /* ContentView.swift */,
@@ -181,12 +181,10 @@
 		DACCE640264F006000E6BD9F /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				DAB4E307265EC0DD0070F37D /* Calendar2.swift */,
 				79FDC84126558616000DD505 /* AlertView.swift */,
-				DACCE641264F009100E6BD9F /* Graph */,
 				DA19C75726447277006067C0 /* WeekView.swift */,
-				DA19C75B26447337006067C0 /* MonthView.swift */,
-				DA19C763264473FC006067C0 /* DayCellView.swift */,
-				DA19C759264472B2006067C0 /* GridStack.swift */,
+				DACCE641264F009100E6BD9F /* Graph */,
 				E090E8A4264484BB001C91FB /* MoodsRowView.swift */,
 			);
 			path = Overview;
@@ -200,7 +198,6 @@
 				DACCE6462652FCD100E6BD9F /* MonthlyRowView.swift */,
 				DACCE64A2654688200E6BD9F /* DailyColumnView.swift */,
 				DACCE6482652FDF500E6BD9F /* MonthlyReport.swift */,
-				DACCE64E26547BE700E6BD9F /* CalendarView.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -239,6 +236,8 @@
 			dependencies = (
 			);
 			name = MoodJournal;
+			packageProductDependencies = (
+			);
 			productName = MoodJournal;
 			productReference = DA292CD526408A9D0021ACB8 /* MoodJournal.app */;
 			productType = "com.apple.product-type.application";
@@ -266,6 +265,8 @@
 				Base,
 			);
 			mainGroup = DA292CCC26408A9C0021ACB8;
+			packageReferences = (
+			);
 			productRefGroup = DA292CD626408A9D0021ACB8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -282,6 +283,7 @@
 			files = (
 				DA292CE026408A9F0021ACB8 /* Preview Assets.xcassets in Resources */,
 				DA292CDD26408A9F0021ACB8 /* Assets.xcassets in Resources */,
+				DA35E624265D6D7E00346CC3 /* ElegantCalendar.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,21 +295,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA19C75826447277006067C0 /* WeekView.swift in Sources */,
-				DA19C764264473FC006067C0 /* DayCellView.swift in Sources */,
+				DAB4E308265EC0DD0070F37D /* Calendar2.swift in Sources */,
 				79FDC84226558616000DD505 /* AlertView.swift in Sources */,
 				DACCE64D26546AFC00E6BD9F /* DailyGraphView.swift in Sources */,
 				E090E8A326448481001C91FB /* MoodModelController.swift in Sources */,
 				DA19C766264474E5006067C0 /* Helper.swift in Sources */,
+				DA090680265EE9DF00BC013A /* GridStack.swift in Sources */,
 				DAE7504026574C8700786858 /* SecondView.swift in Sources */,
+				DA35E61F265D6BF500346CC3 /* ViewRouter.swift in Sources */,
 				DA19C75E2644735F006067C0 /* Colors.swift in Sources */,
-				DACCE64F26547BE700E6BD9F /* CalendarView.swift in Sources */,
 				E090E8A12644842D001C91FB /* Mood.swift in Sources */,
 				DACCE6452652FB2B00E6BD9F /* MonthlyGraphView.swift in Sources */,
+				DA35E61E265D6BF500346CC3 /* SplashView.swift in Sources */,
 				E097F755265443BE00F6E54D /* FeedView.swift in Sources */,
-				DA19C75C26447337006067C0 /* MonthView.swift in Sources */,
 				DA22AB9A2641C39E0083C679 /* OverviewView.swift in Sources */,
-				DA39AC542657374B00CA471A /* SplashView.swift in Sources */,
-				DA19C75A264472B2006067C0 /* GridStack.swift in Sources */,
 				DA19C762264473D8006067C0 /* Day.swift in Sources */,
 				DA22AB8E2641C2710083C679 /* TabBar.swift in Sources */,
 				E090E8A5264484BB001C91FB /* MoodsRowView.swift in Sources */,
@@ -323,7 +324,6 @@
 				E07228262654238F0050C527 /* AddMoodView.swift in Sources */,
 				DA292CD926408A9D0021ACB8 /* MoodJournalApp.swift in Sources */,
 				DACCE64B2654688200E6BD9F /* DailyColumnView.swift in Sources */,
-				DA39AC552657374B00CA471A /* ViewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodJournal/Preview Content\"";
-				DEVELOPMENT_TEAM = 27QRF6CU94;
+				DEVELOPMENT_TEAM = WSHKS965HP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MoodJournal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -461,6 +461,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eyemoodApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -483,6 +484,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.academy.eyemoodApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

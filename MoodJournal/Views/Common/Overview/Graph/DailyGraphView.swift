@@ -19,16 +19,18 @@ struct DailyGraphView: View {
         HStack {
             
             ForEach(monthlyReports, id: \.id) { report in
-                HStack {
+                //HStack {
                     Spacer()
                     VStack {
                         DailyColumnView(report: report)
                     }
+                    
                     Spacer()
-                }
+                //}
                     
             }
         }
+        //.animation(.easeIn)
         .padding()
     }
 }

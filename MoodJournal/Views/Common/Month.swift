@@ -1,5 +1,5 @@
 import Foundation
-
+//deprecated?
 struct Month {
 
     private let calendar = Calendar.current

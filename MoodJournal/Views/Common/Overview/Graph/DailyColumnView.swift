@@ -37,34 +37,34 @@ struct ColumnView: View {
             ZStack(alignment: .bottom){
                 Rectangle()
                     .fill(Color(#colorLiteral(red: 0.8784313725, green: 0.8784313725, blue: 0.8784313725, alpha: 1)))
-                    .frame(width: 30, height: 100)
-                    .cornerRadius(10)
+                    .frame(width: 35, height: 150)
+                    .cornerRadius(7)
                 
                 switch report.moodAssetName {
                 
                 case "angry-barGraph":
                     Rectangle()
                         .fill(Color(#colorLiteral(red: 1, green: 0.4818549156, blue: 0.4422271252, alpha: 1)))
-                        .frame(width: 30, height: CGFloat(Double(percentage)*1))
-                        .cornerRadius(10)
+                        .frame(width: 35, height: CGFloat(Double(percentage)*1.5))
+                        .cornerRadius(7)
                     
                 case "happy-barGraph":
                     Rectangle()
                         .fill(Color(#colorLiteral(red: 0.9998592734, green: 0.8132926822, blue: 0.3589561582, alpha: 1)))
-                        .frame(width: 30, height: CGFloat(Double(percentage)*1))
-                        .cornerRadius(10)
+                        .frame(width: 35, height: CGFloat(Double(percentage)*1.5))
+                        .cornerRadius(7)
                     
                 case "calm-barGraph":
                     Rectangle()
                         .fill(Color(#colorLiteral(red: 0.2705882353, green: 0.7882352941, blue: 0.4901960784, alpha: 1)))
-                        .frame(width: 30, height: CGFloat(Double(percentage)*1))
-                        .cornerRadius(10)
+                        .frame(width: 35, height: CGFloat(Double(percentage)*1.5))
+                        .cornerRadius(7)
                     
                 case "sad-barGraph":
                     Rectangle()
                         .fill(Color(#colorLiteral(red: 0.1607843137, green: 0.6352941176, blue: 0.8117647059, alpha: 1)))
-                        .frame(width: 30, height: CGFloat(Double(percentage)*1))
-                        .cornerRadius(10)
+                        .frame(width: 35, height: CGFloat(Double(percentage)*1.5))
+                        .cornerRadius(7)
                 default: Text("Problem loading graphs")
                 }
                 
@@ -72,7 +72,7 @@ struct ColumnView: View {
             
             Image(report.moodAssetName)
                 .resizable()
-                .frame(maxWidth: 30, maxHeight: 40)
+                .frame(maxWidth: 35, maxHeight: 45)
                 .scaledToFit()
             
         }

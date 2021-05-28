@@ -26,7 +26,7 @@ struct TabBar: View {
     @State var feedIsSelected = false
     @State var moodIsSelected = false
     @State var calendarIsSelected = false
-    
+    @State var data = Date()
     @EnvironmentObject var moodController: MoodModelController
         
     var body: some View {
@@ -82,7 +82,8 @@ struct TabBar: View {
             
         case .newMood: return AnyView ( NewMoodView() )
             
-        case .overview: return AnyView ( OverviewView() )
+        case .overview: return AnyView ( OverviewView(clickedDate: $data)
+                                             )
             
         default: return AnyView ( Text("teste") )
             
