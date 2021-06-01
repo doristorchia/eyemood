@@ -40,8 +40,8 @@ struct BarView: View {
             
             ZStack(alignment: .leading){
                 Rectangle()
-                    .fill(Color(#colorLiteral(red: 0.9097141623, green: 0.9098667502, blue: 0.9096941352, alpha: 1)))
-                    .frame(width: 250, height: 40)
+                    .fill(Color(UIColor(named: "BGDarkGray")!))
+                    .frame(width: 250, height: 45)
                     .cornerRadius(7)
                 
                 switch report.moodAssetName {

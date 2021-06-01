@@ -21,7 +21,8 @@ struct DailyColumnView: View {
 struct ColumnView: View {
     
     var report: MonthlyReport
-    
+    let screenSize: CGSize = UIScreen.main.bounds.size //objeto c height e width da tela
+
     var body: some View {
         
         var value = report.amount
@@ -36,8 +37,8 @@ struct ColumnView: View {
             
             ZStack(alignment: .bottom){
                 Rectangle()
-                    .fill(Color(#colorLiteral(red: 0.8784313725, green: 0.8784313725, blue: 0.8784313725, alpha: 1)))
-                    .frame(width: 35, height: 150)
+                    .fill(Color(UIColor(named: "BGDarkGray")!))
+                    .frame(maxWidth: 35, maxHeight: 150)
                     .cornerRadius(7)
                 
                 switch report.moodAssetName {

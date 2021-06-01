@@ -46,14 +46,14 @@ struct Calendar2<DateView>: View where DateView: View {
                                     self.clickedDate = date
                                 }
                             }
-                            .background(clickedDate == date ? Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)) : Color.init(#colorLiteral(red: 0.8784313725, green: 0.8784313725, blue: 0.8784313725, alpha: 1)) )
-                            .foregroundColor(clickedDate == date ? Color.init(#colorLiteral(red: 0.8784313725, green: 0.8784313725, blue: 0.8784313725, alpha: 1)) : Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)) )
+                            .background(clickedDate == date ? Color(UIColor(named: "Black")!) : Color(UIColor(named: "White")!) )
+                            .foregroundColor(clickedDate == date ? Color(UIColor(named: "White")!) : Color(UIColor(named: "Black")!) )
                             .cornerRadius(7.0)
                         } else {
                             content(date).hidden()
                         }
                     }
-               // }
+               // }Color(UIColor(named: "NewMoodButtonColor")!))
             }
         }
     }

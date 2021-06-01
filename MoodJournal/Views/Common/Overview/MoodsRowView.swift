@@ -19,9 +19,9 @@ struct MoodsRowView: View {
                
                 ZStack {
                     Rectangle()
-                        .foregroundColor(Color.white)
+                        .foregroundColor( Color(UIColor(named: "BGDarkGray")!) )
                         .cornerRadius(10)
-                        .shadow(color: Color(#colorLiteral(red: 0.8156862745, green: 0.8156862745, blue: 0.831372549, alpha: 1)), radius: 10, x: 1, y: 6)
+                        //.shadow(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)), radius: 10, x: 1, y: 6)
                     
                     HStack(alignment: .top) {
                         VStack {
@@ -36,6 +36,7 @@ struct MoodsRowView: View {
                                 .font(.subheadline)
                                 .padding(.top, 10)
                                 .padding(.bottom, 20)
+                                .foregroundColor(Color(UIColor(named: "NewMoodButtonColor")!))
                         }
                         
                         Spacer()

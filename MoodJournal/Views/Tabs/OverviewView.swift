@@ -15,7 +15,7 @@ struct OverviewView: View {
     
     @Binding var clickedDate: Date //this one is being used
     
-    let screenSize: CGSize = UIScreen.main.bounds.size //objeto c height e width da tela
+    //let screenSize: CGSize = UIScreen.main.bounds.size //objeto c height e width da tela
     
     
     //let prevMonths = Calendar.current.date(byAdding: .month, value: -4, to: Date()) ?? Date()
@@ -53,10 +53,9 @@ struct OverviewView: View {
                     if ( dateCalendar.dayIsFuture() ) {
                         Text(dateCalendar.day)
                             .padding(8)
-                            .background(Color.init(#colorLiteral(red: 0.9239689708, green: 0.9184764028, blue: 0.9281911254, alpha: 1)))
-                            .foregroundColor(Color.init(#colorLiteral(red: 0.7547033429, green: 0.7581976056, blue: 0.7667332292, alpha: 1)))
-                    }
-                    else {
+                            .background(Color(UIColor(named: "BGDisabledColor")!))
+                            .foregroundColor(Color(UIColor(named: "FGDisabledColor")!))
+                    } else {
                         Text(dateCalendar.day)
                             .padding(8)
                     }
@@ -96,6 +95,7 @@ struct OverviewView: View {
                             Spacer()
                             
                             MonthlyGraphView(selectedDate: $clickedDate, month: clickedDate.dateToString(format: "d MMM y"), monthlyReports: moodModelController.getReports(date: clickedDate))
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
                             // .animation(.easeIn)
                             
                         }
@@ -111,6 +111,8 @@ struct OverviewView: View {
                             Spacer()
                             
                             DailyGraphView(selectedDate: $clickedDate, month: clickedDate.dateToString(format: "d MMM y"), monthlyReports: moodModelController.getDailyReports(date: clickedDate))
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+
                             // .animation(.easeIn)
                         }
                     }

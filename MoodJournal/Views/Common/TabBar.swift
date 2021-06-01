@@ -57,7 +57,7 @@ struct TabBar: View {
                         if num == 1 {
                             Image(systemName: iconNames[num])
                                 .font(.system(size: 36, weight: .bold))
-                                .foregroundColor(Color(.black))
+                                .foregroundColor(Color(UIColor(named: "NewMoodButtonColor")!))
                         }
                         else {
                             Image(systemName: iconNames[num])
@@ -71,6 +71,8 @@ struct TabBar: View {
                 }
             }
         }
+        .overlay(VStack{Divider().background(Color(#colorLiteral(red: 0.4898338914, green: 0.4869260788, blue: 0.4920717478, alpha: 1))).offset(x: 0, y: 331)})
+      //  .background(Color(UIColor(named: "BGGray")!)).ignoresSafeArea()
         .sheet(isPresented: $showModalView, content: { NewMoodView() })
         
     }

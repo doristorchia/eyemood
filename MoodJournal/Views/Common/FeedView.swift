@@ -19,76 +19,78 @@ struct FeedView: View {
         
         NavigationView {
             
-            ZStack(alignment: .bottomTrailing)
-            {
+            ZStack(alignment: .bottomTrailing) {
                 
                 VStack(spacing: 0){
                     
                     
                     if moodModelController.moods == []{
-                        Spacer()
-                        Text("You have not added any moods yet")
+                        ZStack {
                             
-                            .fontWeight(.light)
-                            .foregroundColor(Color.gray)
-                            .multilineTextAlignment(.center)
-                           
-                        Image("web")
-                            .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0), resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fill)
-                            .padding()
-                            .opacity(0.8)
-                            .blendMode(/*@START_MENU_TOKEN@*/.multiply/*@END_MENU_TOKEN@*/)
-                            .contentShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                            .background(Color.init(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    }
-                    
-                    List {
-                        
-                        ForEach(self.moodModelController.getMonths(), id: \.self) { month in
-                            Section(header: Text(month)
-                                        .font(.title2)
-                                        .bold()
-                                        .padding(.leading, 20)
-                                        .foregroundColor(.black)) {
+                            VStack {
+                                //Spacer()
+                                Text("Add new moods to see your feed!")
+                                    .fontWeight(.light)
+                                    .foregroundColor(Color.init(#colorLiteral(red: 0.1607664227, green: 0.1607957482, blue: 0.1607601345, alpha: 1)))
+                                    .multilineTextAlignment(.center)
                                 
-                                ForEach(self.moodModelController.getDays(monthString: month), id: \.id) { mood in
-                                    
-                                    MoodsRowView(mood: mood)
-                                    
-                                }
-                                .onDelete { (index) in
-                                    
-                                    self.moodModelController.deleteMood(at: index)
-                                }
-                                
+                                Image("web")
+                                    .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0), resizingMode: .stretch)
+                                    .foregroundColor(Color(UIColor(named: "BGDarkGray")!))
+                                    .aspectRatio(contentMode: .fill)
+                                    .padding()
+                                    .opacity(0.8)
+                                    .blendMode(/*@START_MENU_TOKEN@*/.multiply/*@END_MENU_TOKEN@*/)
+                                    .contentShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                             }
                             
                         }
-                        .listRowBackground(Color(#colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.9647058824, alpha: 1)))
-                        
+                        .background(Color(UIColor(named: "NewMoodButtonColor")!).ignoresSafeArea())
                     }
-                    .listStyle(InsetGroupedListStyle())
-                    
-                    .onAppear {
-                        //Removes extra cells that are not being used.
-                        UITableView.appearance().tableFooterView = UIView()
-                        //MARK: Disable selection.
+                    else {
                         
-                        UITableView.appearance().allowsSelection = true
-                        UITableViewCell.appearance().selectionStyle = .none
-                        UITableView.appearance().showsVerticalScrollIndicator = false
+                        List {
+                            
+                            ForEach(self.moodModelController.getMonths(), id: \.self) { month in
+                                Section(header: Text(month)
+                                            .font(.title2)
+                                            .bold()
+                                            .padding(.leading, 20)
+                                            .foregroundColor(Color(UIColor(named: "NewMoodButtonColor")!))) {
+                                    
+                                    ForEach(self.moodModelController.getDays(monthString: month), id: \.id) { mood in
+                                        
+                                        MoodsRowView(mood: mood)
+                                        
+                                    }
+                                    .onDelete { (index) in
+                                        
+                                        self.moodModelController.deleteMood(at: index)
+                                    }
+                                    
+                                }
+                                
+                            }
+                           .listRowBackground(Color(UIColor(named: "BGDarkGray")!))
+                            
+                        }
+                        .listStyle(InsetGroupedListStyle())
                         
+                        .onAppear {
+                            //Removes extra cells that are not being used.
+                            UITableView.appearance().tableFooterView = UIView()
+                            //MARK: Disable selection.
+                            
+                            UITableView.appearance().allowsSelection = true
+                            UITableViewCell.appearance().selectionStyle = .none
+                            UITableView.appearance().showsVerticalScrollIndicator = false
+                        }
                     }
-                    
                 }
-                
-                
-             
-                
             }
             .animation(.default)
         }
+        
     }
 }
 
