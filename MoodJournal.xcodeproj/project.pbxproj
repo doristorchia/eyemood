@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		79FDC84226558616000DD505 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FDC84126558616000DD505 /* AlertView.swift */; };
-		DA03E7A92661856200469AB2 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03E7A82661856200469AB2 /* ViewRouter.swift */; };
-		DA03E7AB2661856700469AB2 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03E7AA2661856700469AB2 /* SplashView.swift */; };
 		DA090680265EE9DF00BC013A /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA09067F265EE9DF00BC013A /* GridStack.swift */; };
 		DA19C75826447277006067C0 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C75726447277006067C0 /* WeekView.swift */; };
 		DA19C75E2644735F006067C0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA19C75D2644735F006067C0 /* Colors.swift */; };
@@ -39,6 +37,8 @@
 		E090E8A5264484BB001C91FB /* MoodsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E090E8A4264484BB001C91FB /* MoodsRowView.swift */; };
 		E090E8A826448613001C91FB /* MultiLineText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E090E8A726448613001C91FB /* MultiLineText.swift */; };
 		E097F755265443BE00F6E54D /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E097F754265443BE00F6E54D /* FeedView.swift */; };
+		E09B928626700F3000590994 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B928526700F2300590994 /* ViewRouter.swift */; };
+		E09B928726700F3000590994 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B928426700F1600590994 /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +76,8 @@
 		E090E8A4264484BB001C91FB /* MoodsRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsRowView.swift; sourceTree = "<group>"; };
 		E090E8A726448613001C91FB /* MultiLineText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLineText.swift; sourceTree = "<group>"; };
 		E097F754265443BE00F6E54D /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		E09B928426700F1600590994 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		E09B928526700F2300590994 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				DA292CD726408A9D0021ACB8 /* MoodJournal */,
 				DA292CD626408A9D0021ACB8 /* Products */,
+				E09B927F26700E7700590994 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,8 +153,8 @@
 		DA292CD726408A9D0021ACB8 /* MoodJournal */ = {
 			isa = PBXGroup;
 			children = (
-				DA03E7AA2661856700469AB2 /* SplashView.swift */,
-				DA03E7A82661856200469AB2 /* ViewRouter.swift */,
+				E09B928526700F2300590994 /* ViewRouter.swift */,
+				E09B928426700F1600590994 /* SplashView.swift */,
 				DAE7503C26574C8700786858 /* Onboarding */,
 				E090E8A62644859F001C91FB /* Controller */,
 				DA292CDA26408A9D0021ACB8 /* ContentView.swift */,
@@ -215,6 +218,15 @@
 				E090E8A226448481001C91FB /* MoodModelController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		E09B927F26700E7700590994 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				DA03E7AA2661856700469AB2 /* SplashView.swift */,
+				DA03E7A82661856200469AB2 /* ViewRouter.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,7 +319,7 @@
 				DA22AB8E2641C2710083C679 /* TabBar.swift in Sources */,
 				E090E8A5264484BB001C91FB /* MoodsRowView.swift in Sources */,
 				DA22AB932641C37F0083C679 /* HomeView.swift in Sources */,
-				DA03E7AB2661856700469AB2 /* SplashView.swift in Sources */,
+				E09B928726700F3000590994 /* SplashView.swift in Sources */,
 				DA19C760264473C0006067C0 /* Month.swift in Sources */,
 				DAE7504226574C8700786858 /* MotherView.swift in Sources */,
 				DA292CDB26408A9D0021ACB8 /* ContentView.swift in Sources */,
@@ -319,7 +331,7 @@
 				E07228262654238F0050C527 /* AddMoodView.swift in Sources */,
 				DA292CD926408A9D0021ACB8 /* MoodJournalApp.swift in Sources */,
 				DACCE64B2654688200E6BD9F /* DailyColumnView.swift in Sources */,
-				DA03E7A92661856200469AB2 /* ViewRouter.swift in Sources */,
+				E09B928626700F3000590994 /* ViewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodJournal/Preview Content\"";
-				DEVELOPMENT_TEAM = WSHKS965HP;
+				DEVELOPMENT_TEAM = 898BYM6W35;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MoodJournal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -472,7 +484,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodJournal/Preview Content\"";
-				DEVELOPMENT_TEAM = WSHKS965HP;
+				DEVELOPMENT_TEAM = 898BYM6W35;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MoodJournal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

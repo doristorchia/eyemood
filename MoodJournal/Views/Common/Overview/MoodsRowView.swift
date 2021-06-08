@@ -72,6 +72,6 @@ struct MoodsRowView: View {
 
 struct MoodsRowView_Previews: PreviewProvider {
     static var previews: some View {
-        MoodsRowView(mood: Mood(emotion: Emotion(state: .happy, color: .happyColor), comment: "Test", date: Date()))
+        MoodsRowView(mood: Mood(emotion: Emotion(state: .happy), comment: "Test", date: Date()))
     }
 }

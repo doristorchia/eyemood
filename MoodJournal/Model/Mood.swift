@@ -8,36 +8,72 @@
 import Foundation
 import SwiftUI
 
-enum EmotionState: String, Codable {
+enum EmotionState: Int, CaseIterable, Codable {
     case happy
     case calm
     case sad
     case angry
-}
+    
+    func getStringColor() -> String {
 
-enum MoodColor: String, Codable {
-    case calmColor = "mehColor"
-    case sadColor = "sadColor"
-    case happyColor = "happyColor"
-    case angryColor = "angryColor"
+        switch self {
+        case .happy:
+            return "happyColor"
+        case .calm:
+            return "calmColor"
+        case .sad:
+            return "sadColor"
+        case .angry:
+            return "angryColor"
+        }
+    }
+    
+    func getColorLiteral() -> Color {
+        switch self {
+        case .happy:
+            return Color(#colorLiteral(red: 1, green: 0.7770196199, blue: 0, alpha: 1))
+        case .calm:
+            return Color(#colorLiteral(red: 0.2741676867, green: 0.786375463, blue: 0.4911866784, alpha: 1))
+        case .sad:
+            return Color(#colorLiteral(red: 0.1708220243, green: 0.640881896, blue: 0.8213298321, alpha: 1))
+        case .angry:
+            return Color(#colorLiteral(red: 0.9687100053, green: 0.448386848, blue: 0.4913209677, alpha: 1))
+        }
+    }
+    func getMoodName() -> String {
+        switch self {
+        case .happy:
+            return "Happy"
+        case .calm:
+            return "Calm"
+        case .sad:
+            return "Sad"
+        case .angry:
+            return "Angry"
+        }
+    }
+    
+    func getMoodImage() -> Image {
+        var imageName = "none"
+        
+        switch self {
+        case .happy:
+             imageName = "happy"
+        case .calm:
+             imageName = "calm"
+        case .sad:
+             imageName = "sad"
+        case .angry:
+             imageName = "angry"
+     
+        }
+        return Image(imageName)
+    }
 }
 
 struct Emotion: Codable {
     var state: EmotionState
-    var color: MoodColor
 
-    var moodColor: Color {
-        switch color {
-        case .calmColor:
-            return Color(#colorLiteral(red: 0.2705882353, green: 0.7882352941, blue: 0.4901960784, alpha: 1))
-        case .angryColor:
-            return Color(#colorLiteral(red: 0.9778849483, green: 0.180129528, blue: 0.2798365951, alpha: 1))
-        case .happyColor:
-            return Color(#colorLiteral(red: 1, green: 0.7770196199, blue: 0, alpha: 1))
-        case .sadColor:
-            return Color(#colorLiteral(red: 0.005369239487, green: 0.5060937405, blue: 0.6911765933, alpha: 1))
-        }
-    }
 }
 
 struct Mood: Codable, Equatable, Identifiable {
