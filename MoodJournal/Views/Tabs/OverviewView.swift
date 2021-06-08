@@ -98,9 +98,11 @@ struct OverviewView: View {
                     
                     VStack {
                         Picker("Monthly or Daily", selection: $selectedOption)  {
-                            Text("Month").tag(0)                        .animation(.easeIn)
+                            Text("Month").tag(0)
+                                .animation(.easeIn)
                             
-                            Text("Day").tag(1)                        .animation(.easeIn)
+                            Text("Day").tag(1)
+                                .animation(.easeIn)
                             
                         }
                         .pickerStyle(SegmentedPickerStyle())
