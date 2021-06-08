@@ -16,14 +16,14 @@ struct DailyGraphView: View {
     var monthlyReports: [MonthlyReport] //0=happy 1=angry 2=calm 3=sad
     
     var body: some View {
-        HStack {
+        HStack(alignment: .center) {
             
             ForEach(monthlyReports, id: \.id) { report in
                 //HStack {
                     Spacer()
-                    VStack {
+                    
                         DailyColumnView(report: report)
-                    }
+                    
                     
                     Spacer()
                 //}

@@ -16,7 +16,7 @@ fileprivate extension DateFormatter {
 
 struct Calendar2<DateView>: View where DateView: View {
     @Environment(\.calendar) var calendar
-    
+    @State var offset = CGSize.zero     //this is new
     @Binding var clickedDate: Date
     
     let interval: DateInterval //!!!!!
@@ -56,6 +56,7 @@ struct Calendar2<DateView>: View where DateView: View {
                // }Color(UIColor(named: "NewMoodButtonColor")!))
             }
         }
+        //.offset(x: offset.width, y: 0)
     }
 
     private var months: [Date] {

@@ -52,6 +52,7 @@ struct FeedView: View {
                         List {
                             
                             ForEach(self.moodModelController.getMonths(), id: \.self) { month in
+                                
                                 Section(header: Text(month)
                                             .font(.title2)
                                             .bold()

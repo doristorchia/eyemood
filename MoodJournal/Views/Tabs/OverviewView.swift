@@ -15,9 +15,7 @@ struct OverviewView: View {
     
     @Binding var clickedDate: Date //this one is being used
     
-    //let screenSize: CGSize = UIScreen.main.bounds.size //objeto c height e width da tela
-    
-    
+    let screenSize: CGSize = UIScreen.main.bounds.size //objeto c height e width da tela
     //let prevMonths = Calendar.current.date(byAdding: .month, value: -4, to: Date()) ?? Date()
     
     var body: some View {
@@ -48,26 +46,56 @@ struct OverviewView: View {
                         
                     }
                 }
-                WeekView()
-                Calendar2(interval: DateInterval(start: monthToShow, end: monthToShow), clickedDate: $clickedDate) { dateCalendar in
-                    if ( dateCalendar.dayIsFuture() ) {
-                        Text(dateCalendar.day)
-                            .padding(8)
-                            .background(Color(UIColor(named: "BGDisabledColor")!))
-                            .foregroundColor(Color(UIColor(named: "FGDisabledColor")!))
-                    } else {
-                        Text(dateCalendar.day)
-                            .padding(8)
+                
+                VStack(alignment: .leading){
+                    
+                    WeekView()
+                    
+                    TabView {
+                        
+                        Calendar2(interval: DateInterval(start: monthToShow, end: monthToShow), clickedDate: $clickedDate) { dateCalendar in
+                            if ( dateCalendar.dayIsFuture() ) {
+                                Text(dateCalendar.day)
+                                    .padding(8)
+                                    .background(Color(UIColor(named: "BGDisabledColor")!))
+                                    .foregroundColor(Color(UIColor(named: "FGDisabledColor")!))
+                            } else {
+                                Text(dateCalendar.day)
+                                    .padding(8)
+                            }
+                        }
                     }
+                    .onAppear(perform: {
+                        UIScrollView.appearance().bounces = false
+                    })
+                    .tabViewStyle(PageTabViewStyle())
+                    .gesture(
+                        DragGesture()
+                            .onEnded( {value in
+                                if value.startLocation.x > value.location.x + 34 {
+                                    print("swipe to next month")
+                                    let monthAfter2Show = monthToShow.monthAfter.dateToString(format: "MMM y")
+                                    let monthAfter2day = Date().monthAfter.dateToString(format: "MMM y")
+                                    
+                                    if ( monthAfter2Show != monthAfter2day ) { //
+                                        monthToShow = monthToShow.monthAfter
+                                        clickedDate = clickedDate.monthAfter
+                                    }
+                                    
+                                } else if value.startLocation.x < value.location.x - 34  {
+                                    print("swipe to prev month")
+                                    monthToShow = monthToShow.monthBefore
+                                    clickedDate = clickedDate.monthBefore
+                                }
+                            })
+                    )
                 }
+                .animation(.linear(duration: 0.1))
                 
-            }
-            .animation(.easeIn)
-            
-            VStack(alignment: .leading) {
-                
-                Spacer()
-               
+                VStack {
+                    
+                    Spacer()
+                    
                     VStack {
                         Picker("Monthly or Daily", selection: $selectedOption)  {
                             Text("Month").tag(0)                        .animation(.easeIn)
@@ -85,7 +113,7 @@ struct OverviewView: View {
                     Spacer()
                     
                     if selectedOption == 0 { //month
-                        VStack(alignment: .leading) {
+                        VStack {
                             Text("  \(clickedDate.dateToString(format: "MMM y"))  ")
                                 .fontWeight(.semibold)
                                 .padding(.leading, 13)
@@ -101,7 +129,7 @@ struct OverviewView: View {
                         }
                     }
                     else { //day
-                        VStack(alignment: .leading) {
+                        VStack{
                             Text("  \(clickedDate.dateToString(format: "d MMM"))  ")
                                 .fontWeight(.semibold)
                                 .padding(.leading, 13)
@@ -112,13 +140,14 @@ struct OverviewView: View {
                             
                             DailyGraphView(selectedDate: $clickedDate, month: clickedDate.dateToString(format: "d MMM y"), monthlyReports: moodModelController.getDailyReports(date: clickedDate))
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-
+                            
                             // .animation(.easeIn)
-                        }
+                        }//.position(x: screenSize.width/2)
                     }
-                
+                    
+                }
+                //.animation(.none)
             }
-            //.animation(.none)
         }
     }
 }

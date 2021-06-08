@@ -52,6 +52,7 @@ extension Calendar {
 }
 
 extension Date {
+    
     func fullDistance(from date: Date, resultIn component: Calendar.Component, calendar: Calendar = .current) -> Int? {
         calendar.dateComponents([component], from: self, to: date).value(for: component)
     }

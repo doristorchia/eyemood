@@ -40,7 +40,7 @@ class MoodModelController: ObservableObject {
         
         let sortedArrayOfMonths = months.sorted( by: { formatter.date(from: $0)! < formatter.date(from: $1)! })
         
-        return sortedArrayOfMonths
+        return sortedArrayOfMonths.reversed() //changed to reversed to show months in correct order on feedview
         
     }
     
